@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.report-card {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    width: 700px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 22px 8px rgba(188,202,235,0.5);
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+}
+
+.result h3 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    color: hsl(221, 100%, 96%);
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.circle .big {
+    margin: 0 auto 0 auto;
+    font-size: 60px;
+    color: white;
+    font-weight: 700;
+}
+
+.circle .small {
+    margin: 0 auto 0 auto;
+    font-size: 15px;
+    color: #ccc;
+    font-weight: 700;
+}
+
+.result-description {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.result-description p {
+    text-align: center;
+    color: #ccc;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.result-description h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .report-card {
+        flex-direction: column;
+        height: 925px;
+    }
+
+    .result, .summary {
+        width: 100%;
+    }
+
+    .result {
+        margin-top: -25px;
+        height: 450px;
+        align-items: flex-end;
+    }
+
+}
+
+.summary h2, .valcontainer, .continue-button {
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.summary h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.valcontainer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.valcontainer div {
+    display: flex;
+}
+
+.valcontainer p {
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+.continue-button {
+    display: flex;
+    height: 50px;
+    width: 80%;
+    background-color: hsl(224, 30%, 27%);
+    margin-top: 35px;
+    border-radius: 25px;
+}
+
+.continue-button:hover {
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.continue-button p {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reaction {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    color: hsl(0, 100%, 67%);
+}
+
+.valcontainer-text-val {
+    color: black;
+    padding-right: 15px;
+}
+
+.valcontainer-text-val a {
+    color: rgba(197,191,193,255);
+}
+
+.memory {
+    background-color: hsl(39, 100%, 56%, 0.1);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    color: hsl(234, 85%, 45%);
+}
